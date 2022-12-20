@@ -33,3 +33,8 @@ Non-trainable params: 0
 It achieved 99.31% of accuracy on train set of this CNN model trained on GPU.
 
 It achieved 98.98% of accuracy on test set of this CNN model trained on GPU.
+
+
+## Samples
+![Digit 3](samples/sample3.png)
+![Digit 9](samples/sample9.png)
