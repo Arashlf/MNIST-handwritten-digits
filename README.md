@@ -9,35 +9,25 @@ MNIST contains 70,000 images of handwritten digits: 60,000 for training and 10,0
 
 ## Description
 This is a 5 layers TF Keras Functional API Convolutional Neural Network for digits recognition trained on MNIST dataset.
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- InputLayer       			[(28, 28, 1)]       0         
-                                                                 
- Conv2D          			(25, 25, 10)        170       
-                                                                 
- MaxPoolin  				(12, 12, 10)       0         
-                                                                 
- Conv2D          			(11, 11, 20)        820       
-                                                                 
- MaxPoolin   				(5, 5, 20)         0         
-                                                                 
- Conv2D          			(4, 4, 60)          4860      
-                                                                 
- MaxPoolin  				(2, 2, 60)         0         
-                                                                 
- Conv2D          			(1, 1, 100)         24100     
-                                                                 
- Dropout         			(1, 1, 100)         0         
-                                                                 
- Flatten        			(100)               0         
-                                                                 
- Dense            			(10)                1010      
+
+| Layer (type)  | Output Shape  | Param #  		|
+| ------------- | ------------- | ------------- |
+| InputLayer  	| [(28, 28, 1)]	| 0   	|
+| Conv2D   		| (25, 25, 10)  | 170   |
+| MaxPoolin   	| (12, 12, 10)  | 0   	|
+| Conv2D   		| (11, 11, 20)  | 820   |
+| MaxPoolin   	| (5, 5, 20)   	| 0   	|
+| Conv2D   		| (4, 4, 60)   	| 4860	|
+| MaxPoolin   	| (2, 2, 60)   	| 0   	|
+| Conv2D   		| (1, 1, 100)  	| 24100	|
+| Dropout   	| (1, 1, 100)  	| 0 	|
+| Flatten   	| (100)   		| 0 	|
+| Dense   		| (10)   		| 1010 	|
 =================================================================
 Total params: 30,960
 Trainable params: 30,960
 Non-trainable params: 0
-_________________________________________________________________
+
 
 ## Accuracy
 It achieved 99.31% of accuracy on train set of this CNN model trained on GPU.
